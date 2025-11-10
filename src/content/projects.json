@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "aurora-beauty-rebrand",
+    "name": "Aurora Beauty Rebrand",
+    "role": "Brand Identity, Art Direction",
+    "year": "2024",
+    "tags": ["Branding", "Packaging"],
+    "problem": "A fast-growing D2C skincare brand needed a scalable identity system and packaging refresh across 40+ SKUs.",
+    "process": "Discovery workshops → visual territory exploration → logo + typography system → packaging architecture → launch toolkit.",
+    "outcome": "+120% engagement, +35% repeat purchases within 3 months. Unified brand presence across retail and social.",
+    "metrics": {"engagement": 120, "repeat": 35},
+    "palette": ["#111827", "#F8FAFC", "#F59E0B", "#10B981"],
+    "typography": {"display": "Sora", "body": "Inter"},
+    "images": [
+      "/projects/aurora/hero.webp",
+      "/projects/aurora/packaging.webp",
+      "/projects/aurora/grid-1.webp"
+    ]
+  },
+  {
+    "slug": "volt-app-ui",
+    "name": "Volt Finance App UI",
+    "role": "UI/UX, Motion",
+    "year": "2023",
+    "tags": ["UI/UX", "Social"],
+    "problem": "Fintech onboarding drop-off was high due to unclear hierarchy and friction.",
+    "process": "Audit → wireframes → high-fidelity UI → interactive prototype → motion cues for progress and success states.",
+    "outcome": "Onboarding completion up 26%, support tickets down 18%.",
+    "metrics": {"completion": 26, "tickets": -18},
+    "palette": ["#0F172A", "#F8FAFC", "#3B82F6", "#22D3EE"],
+    "typography": {"display": "Clash Display", "body": "Manrope"},
+    "images": [
+      "/projects/volt/hero.webp",
+      "/projects/volt/ui-1.webp",
+      "/projects/volt/ui-2.webp"
+    ]
+  },
+  {
+    "slug": "café-lumina-logo-system",
+    "name": "Café Lumina Logo System",
+    "role": "Logo Design",
+    "year": "2022",
+    "tags": ["Logos", "Branding"],
+    "problem": "Needed a versatile logo system for signage, cups, and social.",
+    "process": "Sketches → vector exploration → alternates and lockups → application mocks.",
+    "outcome": "Recognizable, flexible logo with increased footfall after launch.",
+    "metrics": {"followers": 38},
+    "palette": ["#111827", "#F8FAFC", "#EF4444", "#06B6D4"],
+    "typography": {"display": "Poppins", "body": "Inter"},
+    "images": [
+      "/projects/lumina/hero.webp",
+      "/projects/lumina/lockups.webp",
+      "/projects/lumina/applications.webp"
+    ]
+  }
+]

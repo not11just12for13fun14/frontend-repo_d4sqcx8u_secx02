@@ -1,28 +1,47 @@
-import { useState } from 'react'
+import { Routes, Route, Link } from 'react-router-dom'
+import { ThemeProvider } from './components/ThemeProvider'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Work from './pages/Work'
+import About from './pages/About'
+import Services from './pages/Services'
+import Contact from './pages/Contact'
+import CaseStudy from './pages/CaseStudy'
+import Footer from './components/Footer'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
-      </div>
-    </div>
+    <>
+      <Hero />
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <header className="mb-6 flex items-end justify-between">
+          <div>
+            <h2 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Selected Work</h2>
+            <p className="text-gray-600 dark:text-gray-300">Recent projects across branding, UI, and social.</p>
+          </div>
+          <Link to="/work" className="text-sm underline">View all</Link>
+        </header>
+        <Work />
+      </section>
+    </>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <ThemeProvider>
+      <div className="min-h-screen bg-[#F8FAFC] dark:bg-[#0B1220] text-gray-900 dark:text-white">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/case/:slug" element={<CaseStudy />} />
+        </Routes>
+        <Footer />
+      </div>
+    </ThemeProvider>
+  )
+}
